@@ -4,6 +4,8 @@
   "description": "Site moderno e responsivo para barbearia, construído com **HTML5** e **Tailwind CSS**.",
   "main": "index.js",
   "scripts": {
+    "build:css": "tailwindcss -i src/input.css -o public/styles.css --minify",
+    "watch:css": "tailwindcss -i src/input.css -o public/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/Guararai/barber-website#readme",
   "devDependencies": {
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.19"
   }
 }
