@@ -1,0 +1,24 @@
+{
+  "name": "barber_website",
+  "version": "1.0.0",
+  "description": "Site moderno e responsivo para barbearia, construído com **HTML5** e **Tailwind CSS**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guararai/barber-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Guararai/barber-website/issues"
+  },
+  "homepage": "https://github.com/Guararai/barber-website#readme",
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}
