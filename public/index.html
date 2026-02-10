@@ -4,10 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Urban Barber - Design moderno e cortes contemporâneos">
-    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
     <title>Distrito Barber</title>
+    <meta name="description" content="Distrito Barber - Tradição e modernidade em cortes masculinos. Cortes sociais, barba, platinado e muito mais em São Paulo.">
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://distrito-barber.web.app/">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Distrito Barber">
+    <meta property="og:title" content="Distrito Barber - Cortes Modernos com Tradição">
+    <meta property="og:description" content="Tradição e modernidade em um só lugar. Cortes masculinos contemporâneos, barba, platinado e experiência VIP em São Paulo.">
+    <meta property="og:url" content="https://distrito-barber.web.app">
+    <meta property="og:image" content="https://distrito-barber.web.app/imagens/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Distrito Barber - Barbearia moderna em São Paulo">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Distrito Barber - Cortes Modernos com Tradição">
+    <meta name="twitter:description" content="Tradição e modernidade em um só lugar. Cortes masculinos contemporâneos, barba, platinado e experiência VIP.">
+    <meta name="twitter:image" content="https://distrito-barber.web.app/imagens/og-image.png">
+
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="imagens/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="manifest" href="imagens/site.webmanifest">
+    <meta name="msapplication-TileImage" content="imagens/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#0f172a">
+    <meta name="theme-color" content="#DC143C">
+    <!-- CSS -->
     <style>
+        /* TAILWIND BASE/RESET */
         *,
         :after,
         :before {
@@ -399,6 +432,7 @@
             }
         }
 
+        /* TAILWIND UTILITIES */
         .fixed {
             position: fixed
         }
@@ -1265,6 +1299,7 @@
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
         }
 
+        /* RESPONSIVE BREAKPOINTS */
         @media (min-width:640px) {
             .sm\:block {
                 display: block
@@ -1469,17 +1504,128 @@
         img.onload = function () { document.documentElement.classList.add('webp'); };
         img.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
     </script>
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BarberShop",
+        "name": "Distrito Barber",
+        "description": "Tradição e modernidade em cortes masculinos. Cortes sociais, barba, platinado e experiência VIP em São Paulo.",
+        "url": "https://distrito-barber.web.app",
+        "logo": "https://distrito-barber.web.app/imagens/logo.png",
+        "image": "https://distrito-barber.web.app/imagens/og-image.png",
+        "telephone": "+55-11-99999-9999",
+        "email": "contato@distritobarber.com.br",
+        "foundingDate": "2009",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Augusta, 500",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -23.5505,
+            "longitude": -46.6333
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        ],
+        "priceRange": "R$15 - R$100",
+        "currenciesAccepted": "BRL",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Corte Social",
+                        "description": "Corte masculino moderno e personalizado"
+                    },
+                    "price": "40.00",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Barba",
+                        "description": "Design e aparação com acabamento premium"
+                    },
+                    "price": "30.00",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Combo (Corte + Barba + Finalização)",
+                        "description": "Corte completo + barba + finalização"
+                    },
+                    "price": "60.00",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sobrancelha",
+                        "description": "Design masculino profissional"
+                    },
+                    "price": "15.00",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Platinado",
+                        "description": "Descoloração com produtos premium"
+                    },
+                    "price": "80.00",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "VIP Pack",
+                        "description": "Experiência completa: tudo incluído"
+                    },
+                    "price": "100.00",
+                    "priceCurrency": "BRL"
+                }
+            ]
+        },
+        "sameAs": []
+    }
+    </script>
 </head>
 
 <body class="font-sans antialiased bg-white overflow-x-hidden max-w-full">
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <header class="fixed w-full bg-white shadow-lg z-50 border-b-4 border-barber-red">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <!-- Logo -->
+                <!-- LOGO -->
                 <div class="flex items-center gap-4">
-                    <img src="imagens/logo.png" fetchpriority=high alt="Urban Barber Logo"
+                    <img src="imagens/logo.png" fetchpriority="high" alt="Distrito Barber Logo"
                         class="h-20 w-auto animate-logo-pulse" width="160" height="160">
                     <div class="hidden sm:block">
                         <div class="text-xl font-black text-barber-dark">DISTRITO</div>
@@ -1487,7 +1633,7 @@
                     </div>
                 </div>
 
-                <!-- Desktop Menu -->
+                <!-- DESKTOP MENU -->
                 <div class="hidden md:flex space-x-8 font-bold uppercase text-sm">
                     <a href="#inicio"
                         class="nav-link text-gray-700 hover:text-barber-red transition duration-300">Início</a>
@@ -1506,8 +1652,8 @@
                     Agendar
                 </a>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" aria-label="Abrir menu de navegação"
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false"
                     class="md:hidden text-gray-900 focus:outline-none">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1518,7 +1664,7 @@
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
+            <!-- MOBILE MENU -->
             <div id="mobile-menu" class="mobile-menu md:hidden">
                 <div class="pt-4 pb-2 space-y-3">
                     <a href="#inicio"
@@ -1539,9 +1685,9 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- HERO SECTION -->
         <section id="inicio" class="relative min-h-screen flex items-center pt-20 hero-bg overflow-hidden">
-            <!-- Barber Pole Decorative Elements -->
+            <!-- BARBER POLE DECORATIVE -->
             <div class="absolute left-0 top-0 h-full w-8 barber-pole animate-barber-pole hidden lg:block"></div>
             <div class="absolute right-0 top-0 h-full w-8 barber-pole animate-barber-pole hidden lg:block"></div>
 
@@ -1568,7 +1714,7 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- ABOUT SECTION -->
         <section id="sobre" class="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
             <div class="container mx-auto px-6 relative z-10">
                 <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -1583,7 +1729,7 @@
                             <span class="text-barber-red">QUALIDADE</span>
                         </h2>
                         <p class="text-gray-600 mb-4 leading-relaxed text-lg">
-                            A Urban Barber nasceu da paixão por resgatar a tradição das antigas barbearias,
+                            A Distrito Barber nasceu da paixão por resgatar a tradição das antigas barbearias,
                             combinando o charme clássico com técnicas modernas de corte e estilo.
                         </p>
                         <p class="text-gray-600 mb-6 leading-relaxed text-lg">
@@ -1602,18 +1748,16 @@
                         </div>
                     </div>
 
-                    <!-- Image Carousel -->
+                    <!-- IMAGE CAROUSEL -->
                     <div class="relative reveal px-12 lg:px-10 md:px-8 sm:px-6">
-                        <!-- Navigation Buttons -->
-                        <button onclick="swapCarouselImages()" aria-label="Alternar imagens"
-                            class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-barber-red text-white border-3 border-barber-gold w-12 h-12 md:w-11 md:h-11 sm:w-10 sm:h-10 rounded-full cursor-pointer transition-all duration-300 p-0 flex items-center justify-center select-none shadow-lg hover:bg-[#B01030] active:scale-95">
+                        <!-- CAROUSEL NAVIGATION -->
+                        <button class="carousel-btn absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-barber-red text-white border-3 border-barber-gold w-12 h-12 md:w-11 md:h-11 sm:w-10 sm:h-10 rounded-full cursor-pointer transition-all duration-300 p-0 flex items-center justify-center select-none shadow-lg hover:bg-[#B01030] active:scale-95" aria-label="Imagem anterior">
                             <svg class="w-6 h-6 md:w-5 md:h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24" stroke-width="3">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
-                        <button onclick="swapCarouselImages()" aria-label="Alternar imagens"
-                            class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-barber-red text-white border-3 border-barber-gold w-12 h-12 md:w-11 md:h-11 sm:w-10 sm:h-10 rounded-full cursor-pointer transition-all duration-300 p-0 flex items-center justify-center select-none shadow-lg hover:bg-[#B01030] active:scale-95">
+                        <button class="carousel-btn absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-barber-red text-white border-3 border-barber-gold w-12 h-12 md:w-11 md:h-11 sm:w-10 sm:h-10 rounded-full cursor-pointer transition-all duration-300 p-0 flex items-center justify-center select-none shadow-lg hover:bg-[#B01030] active:scale-95" aria-label="Próxima imagem">
                             <svg class="w-6 h-6 md:w-5 md:h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24" stroke-width="3">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -1621,12 +1765,12 @@
                         </button>
 
                         <div class="h-96 relative w-full">
-                            <!-- Image Containers -->
+                            <!-- CAROUSEL IMAGES -->
                             <div class="carousel-image-container front absolute w-full h-full rounded-lg overflow-hidden border-4 border-barber-gold shadow-2xl"
                                 id="carouselImg1">
                                 <picture>
                                     <source srcset="imagens/4.webp" type="image/webp">
-                                    <img src="imagens/4.jpg" alt="Ambiente da Barbearia Urban Barber"
+                                    <img src="imagens/4.jpg" alt="Ambiente da Barbearia Distrito Barber"
                                         class="w-full h-full object-cover block" width="460" height="690"
                                         loading="lazy">
                                 </picture>
@@ -1646,7 +1790,7 @@
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- SERVICES SECTION -->
         <section id="servicos" class="py-24 bg-barber-dark text-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
@@ -1661,7 +1805,7 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service Card 1 -->
+                    <!-- CARD: CORTE SOCIAL -->
                     <div
                         class="reveal price-card group relative bg-white text-gray-900 border-4 border-barber-red p-8 rounded-lg cursor-pointer transition-all duration-300">
                         <div class="relative z-10">
@@ -1676,7 +1820,7 @@
                         </div>
                     </div>
 
-                    <!-- Service Card 2 -->
+                    <!-- CARD: BARBA -->
                     <div
                         class="reveal price-card group relative bg-white text-gray-900 border-4 border-barber-blue p-8 rounded-lg cursor-pointer transition-all duration-300">
                         <div class="relative z-10">
@@ -1691,7 +1835,7 @@
                         </div>
                     </div>
 
-                    <!-- Service Card 3 -->
+                    <!-- CARD: COMBO -->
                     <div
                         class="reveal price-card group relative bg-white text-gray-900 border-4 border-barber-gold p-8 rounded-lg cursor-pointer transition-all duration-300">
                         <div class="relative z-10">
@@ -1706,7 +1850,7 @@
                         </div>
                     </div>
 
-                    <!-- Service Card 4 -->
+                    <!-- CARD: SOBRANCELHA -->
                     <div
                         class="reveal price-card group relative bg-white text-gray-900 border-4 border-barber-red p-8 rounded-lg cursor-pointer transition-all duration-300">
                         <div class="relative z-10">
@@ -1721,7 +1865,7 @@
                         </div>
                     </div>
 
-                    <!-- Service Card 5 -->
+                    <!-- CARD: PLATINADO -->
                     <div
                         class="reveal price-card group relative bg-white text-gray-900 border-4 border-barber-blue p-8 rounded-lg cursor-pointer transition-all duration-300">
                         <div class="relative z-10">
@@ -1736,7 +1880,7 @@
                         </div>
                     </div>
 
-                    <!-- Service Card 6 - Featured -->
+                    <!-- CARD: VIP PACK (FEATURED) -->
                     <div
                         class="reveal price-card group relative bg-gradient-to-br from-barber-red to-barber-blue text-white border-4 border-barber-gold p-8 rounded-lg cursor-pointer transition-all duration-300">
                         <div class="relative z-10">
@@ -1755,7 +1899,7 @@
             </div>
         </section>
 
-        <!-- Gallery Section -->
+        <!-- GALLERY SECTION -->
         <section id="galeria" class="py-24 bg-gradient-to-b from-gray-900 to-barber-dark text-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
@@ -1769,28 +1913,30 @@
                     </h2>
                 </div>
 
-                <!-- Masonry-style Gallery -->
+                <!-- GALLERY GRID -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <!-- Large featured image -->
+                    <!-- FEATURED IMAGE -->
                     <div class="col-span-2 row-span-2 reveal">
                         <div
-                            class="h-96 overflow-hidden border-4 border-barber-red hover:border-[#B01030] transition duration-300 cursor-pointer gallery-item rounded-lg">
+                            class="h-96 overflow-hidden border-4 border-barber-red hover:border-[#B01030] transition duration-300 cursor-pointer gallery-item rounded-lg"
+                            role="button" tabindex="0">
                             <picture>
                                 <source srcset="imagens/3.webp" type="image/webp">
-                                <img src="imagens/3.jpg" alt="Trabalho 1"
+                                <img src="imagens/3.jpg" alt="Ambiente interno da Distrito Barber"
                                     class="w-full h-full object-cover hover:scale-110 transition duration-500"
                                     width="600" height="900" loading="lazy">
                             </picture>
                         </div>
                     </div>
 
-                    <!-- Small images -->
+                    <!-- GALLERY ITEMS -->
                     <div class="reveal">
                         <div
-                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg">
+                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg"
+                            role="button" tabindex="0">
                             <picture>
                                 <source srcset="imagens/1.webp" type="image/webp">
-                                <img src="imagens/1.jpg" alt="Trabalho 2"
+                                <img src="imagens/1.jpg" alt="Detalhe da decoração da barbearia"
                                     class="w-full h-full object-cover hover:scale-110 transition duration-500"
                                     width="300" height="450" loading="lazy">
                             </picture>
@@ -1798,10 +1944,11 @@
                     </div>
                     <div class="reveal">
                         <div
-                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg">
+                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg"
+                            role="button" tabindex="0">
                             <picture>
                                 <source srcset="imagens/6.webp" type="image/webp">
-                                <img src="imagens/6.jpg" alt="Trabalho 3"
+                                <img src="imagens/6.jpg" alt="Equipamentos e ferramentas profissionais"
                                     class="w-full h-full object-cover hover:scale-110 transition duration-500"
                                     width="300" height="200" loading="lazy">
                             </picture>
@@ -1809,10 +1956,11 @@
                     </div>
                     <div class="reveal">
                         <div
-                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg">
+                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg"
+                            role="button" tabindex="0">
                             <picture>
                                 <source srcset="imagens/2.webp" type="image/webp">
-                                <img src="imagens/2.jpg" alt="Trabalho 4"
+                                <img src="imagens/2.jpg" alt="Cadeira de barbeiro clássica"
                                     class="w-full h-full object-cover hover:scale-110 transition duration-500"
                                     width="300" height="200" loading="lazy">
                             </picture>
@@ -1820,10 +1968,11 @@
                     </div>
                     <div class="reveal">
                         <div
-                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg">
+                            class="h-44 overflow-hidden border-4 border-gray-700 hover:border-gray-600 transition duration-300 cursor-pointer gallery-item rounded-lg"
+                            role="button" tabindex="0">
                             <picture>
                                 <source srcset="imagens/8.webp" type="image/webp">
-                                <img src="imagens/8.jpg" alt="Trabalho 5"
+                                <img src="imagens/8.jpg" alt="Espaço de atendimento da barbearia"
                                     class="w-full h-full object-cover hover:scale-110 transition duration-500"
                                     width="300" height="450" loading="lazy">
                             </picture>
@@ -1837,14 +1986,14 @@
 
     </main>
 
-    <!-- Contact/Footer Section -->
+    <!-- FOOTER / CONTACT -->
     <footer id="contato" class="bg-barber-dark text-white py-16 border-t-4 border-barber-red">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-12 mb-12 reveal">
-                <!-- Contact -->
+                <!-- CONTACT INFO -->
                 <div>
                     <div class="flex items-center gap-3 mb-6">
-                        <img src="imagens/logo.png" fetchpriority=high alt="Logo" class="h-12 w-auto brightness-200"
+                        <img src="imagens/logo.png" alt="Distrito Barber" class="h-12 w-auto brightness-200"
                             width="160" height="160" loading="lazy">
                         <div>
                             <div class="text-xl font-black text-white">DISTRITO</div>
@@ -1880,7 +2029,7 @@
                     </div>
                 </div>
 
-                <!-- Hours -->
+                <!-- HOURS -->
                 <div>
                     <h3
                         class="font-black uppercase text-sm tracking-wider mb-4 text-barber-red flex items-center gap-2">
@@ -1904,11 +2053,11 @@
                     </div>
                 </div>
 
-                <!-- Social -->
+                <!-- SOCIAL -->
                 <div>
                     <h3 class="font-black uppercase text-sm tracking-wider mb-4 text-barber-red">Redes Sociais</h3>
                     <div class="flex space-x-4 mb-6">
-                        <!-- Facebook -->
+                        <!-- FACEBOOK -->
                         <a href="#" aria-label="Facebook da Distrito Barber"
                             class="text-gray-400 hover:text-barber-blue transition duration-300 transform hover:-translate-y-1 hover:scale-110">
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -1916,7 +2065,7 @@
                                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
                         </a>
-                        <!-- Instagram -->
+                        <!-- INSTAGRAM -->
                         <a href="#" aria-label="Instagram da Distrito Barber"
                             class="text-gray-400 hover:text-barber-red transition duration-300 transform hover:-translate-y-1 hover:scale-110">
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -1924,7 +2073,7 @@
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
-                        <!-- WhatsApp -->
+                        <!-- WHATSAPP -->
                         <a href="#" aria-label="WhatsApp da Distrito Barber"
                             class="text-gray-400 hover:text-green-500 transition duration-300 transform hover:-translate-y-1 hover:scale-110">
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -1948,53 +2097,49 @@
         </div>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox fixed inset-0 z-[9999] bg-black/95 items-center justify-center animate-fade-in">
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox fixed inset-0 z-[9999] bg-black/95 items-center justify-center animate-fade-in" role="dialog" aria-modal="true">
         <button id="close-lightbox" aria-label="Fechar visualização da imagem"
             class="absolute top-8 right-8 text-white text-4xl hover:text-barber-red transition duration-300 z-50">×</button>
         <img id="lightbox-img" src="" alt="" class="max-w-[90%] max-h-[90vh] object-contain animate-zoom-in">
     </div>
 
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
     <script>
-        // Mobile Menu Toggle
+        // Mobile Menu
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
 
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
+            const isOpen = mobileMenu.classList.toggle('active');
             menuIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
         });
 
-        // Close mobile menu when clicking a link
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 menuIcon.classList.remove('hidden');
                 closeIcon.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // Scroll Reveal Animation
+        // Scroll Reveal
         const revealElements = document.querySelectorAll('.reveal');
 
         const revealOnScroll = () => {
             const windowHeight = window.innerHeight;
             revealElements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
-                const revealPoint = 100;
-
-                if (elementTop < windowHeight - revealPoint) {
+                if (elementTop < windowHeight - 100) {
                     element.classList.add('active');
                 }
             });
         };
-
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); // Initial check
 
         // Counter Animation
         const counters = document.querySelectorAll('.counter');
@@ -2005,15 +2150,12 @@
 
             const aboutSection = document.getElementById('sobre');
             const aboutPosition = aboutSection.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
 
-            if (aboutPosition < windowHeight - 100) {
+            if (aboutPosition < window.innerHeight - 100) {
                 counterAnimated = true;
-
                 counters.forEach(counter => {
                     const target = parseInt(counter.getAttribute('data-target'));
-                    const duration = 2000;
-                    const increment = target / (duration / 16);
+                    const increment = target / (2000 / 16);
                     let current = 0;
 
                     const updateCounter = () => {
@@ -2025,81 +2167,22 @@
                             counter.textContent = target;
                         }
                     };
-
                     updateCounter();
                 });
             }
         };
 
-        window.addEventListener('scroll', animateCounters);
-
-        // Lightbox Gallery
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const closeLightbox = document.getElementById('close-lightbox');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const img = item.querySelector('img');
-                lightboxImg.src = img.currentSrc || img.src;
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        closeLightbox.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Close lightbox with ESC key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Smooth Scroll Enhancement
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 90;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Active nav link on scroll
+        // Active Nav
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
 
-        window.addEventListener('scroll', () => {
+        const updateActiveNav = () => {
             let current = '';
             sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= sectionTop - 100) {
+                if (window.scrollY >= section.offsetTop - 100) {
                     current = section.getAttribute('id');
                 }
             });
-
             navLinks.forEach(link => {
                 link.classList.remove('text-barber-red');
                 link.classList.add('text-gray-700');
@@ -2108,29 +2191,84 @@
                     link.classList.add('text-barber-red');
                 }
             });
+        };
+
+        // Consolidated scroll listener
+        window.addEventListener('scroll', () => {
+            revealOnScroll();
+            animateCounters();
+            updateActiveNav();
+        });
+        revealOnScroll();
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightboxBtn = document.getElementById('close-lightbox');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        const openLightbox = (item) => {
+            const img = item.querySelector('img');
+            lightboxImg.src = img.currentSrc || img.src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeLightbox = () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        };
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => openLightbox(item));
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openLightbox(item);
+                }
+            });
         });
 
-        // Image Carousel in About Section - Simple 2-image swap
+        closeLightboxBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 90;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Carousel
         let isSwapping = false;
 
         function swapCarouselImages() {
             if (isSwapping) return;
-
             isSwapping = true;
             const img1 = document.getElementById('carouselImg1');
             const img2 = document.getElementById('carouselImg2');
-
-            // Toggle classes to swap positions
             img1.classList.toggle('front');
             img1.classList.toggle('back');
             img2.classList.toggle('front');
             img2.classList.toggle('back');
-
-            // Re-enable after animation completes
-            setTimeout(() => {
-                isSwapping = false;
-            }, 700);
+            setTimeout(() => { isSwapping = false; }, 700);
         }
+
+        document.querySelectorAll('.carousel-btn').forEach(btn => {
+            btn.addEventListener('click', swapCarouselImages);
+        });
     </script>
 
 </body>

@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://distritobarber.web.app/sitemap.xml
+Disallow: /404.html
+
+Sitemap: https://distrito-barber.web.app/sitemap.xml
